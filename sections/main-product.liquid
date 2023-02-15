@@ -5,7 +5,7 @@
 >
 <h1>{{ product.title | upcase }}</h1>
   {% assign title_upper = product.title | upcase %}
-  <h2> variable: {{ title_upper }}</h2>
+  <h2> {{ title_upper }}</h2>
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
