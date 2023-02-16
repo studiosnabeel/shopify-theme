@@ -3,6 +3,11 @@
   class="page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
+  <div>
+    <h2>Store Name</h2>
+    <h1>Product Name</h1>
+    <p>Price with currency</p>
+  </div>
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
