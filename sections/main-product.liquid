@@ -4,9 +4,9 @@
   data-section="{{ section.id }}"
 >
   <div>
-    <h2>{{ shop.name | upcase | color_lighten}}</h2>
+    <h2>{{ shop.name | upcase}}</h2>
     <h1>{{ product.title }}</h1>
-    <p>Price with currency</p>
+    <p>{{ product.price | money_with_currency }}</p>
   </div>
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
