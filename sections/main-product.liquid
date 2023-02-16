@@ -5,7 +5,7 @@
 >
   <div>
     <h2>{{ shop.name | upcase }}</h2>
-    <h1>{{ product.options_by_name }}</h1>
+    <h1>{{ product.title }}</h1>
     <p>Price with currency</p>
   </div>
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
