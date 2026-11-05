@@ -17,7 +17,7 @@
     {%- endunless -%}
 
     <title>
-      {{ Shopify Theme }}
+      {{ Shopify }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
@@ -295,3 +295,13 @@
     {%- endif -%}
   </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ Shopify Theme }}"
+  to: "{{ Shopify }}"
+  position: 795..808
+{% endcomment %}
